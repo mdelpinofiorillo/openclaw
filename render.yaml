@@ -7,7 +7,7 @@ services:
     image:
       url: ghcr.io/openclaw/openclaw:2026.9.4
 
-    dockerCommand: node openclaw.mjs gateway --allow-unconfigured
+    dockerCommand: node openclaw.mjs gateway --allow-unconfigured --bind lan
     healthCheckPath: /startupz
 
     envVars:
